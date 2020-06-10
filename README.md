@@ -5,8 +5,6 @@
 	<img alt="Logo" title="#logo" width="100%" src="https://github.com/Ariosmaia/foodfy/blob/master/assets/foodfy.JPG">
 </h1>
 
-> Status do Projeto: Concluido :heavy_check_mark:
-
 ### Tópicos
 - [Descrição do projeto](#clipboard-descrição-do-projeto)
 - [Pré-requisitos](#point_right-pré-requisitos)
@@ -16,7 +14,7 @@
 
 ## :clipboard: Descrição do projeto
 
-O projeto <strong>Foodfy</strong> é um sistema web de receitas.
+<strong>Foodfy</strong> é um projeto fictício de uma empresa de receitas na web.
 
 ## :point_right: Pré-requisitos
 

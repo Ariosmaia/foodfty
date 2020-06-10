@@ -1,5 +1,8 @@
 <h1 align="center">
 	Foodfy
+	<br/>
+	<br/>
+	<img alt="Logo" title="#logo" width="100%" src="https://github.com/Ariosmaia/foodfy/blob/master/assets/foodfy.JPG">
 </h1>
 
 > Status do Projeto: Concluido :heavy_check_mark:
@@ -7,31 +10,34 @@
 ### Tópicos
 - [Descrição do projeto](#clipboard-descrição-do-projeto)
 - [Pré-requisitos](#point_right-pré-requisitos)
-- [Libs instaladas](#open_file_folder-libs-instaladas)
 - [Como rodar a aplicacão](#arrow_forward-como-rodar-a-aplicacão)
 - [Licença](#memo-licença)
 
 
 ## :clipboard: Descrição do projeto
 
-O projeto <strong>Foodfy</strong> foi desenvolvido algum tempo atrás apenas para estudar css responsivo e design.
+O projeto <strong>Foodfy</strong> é um sistema web de receitas.
 
 ## :point_right: Pré-requisitos
 
-<p>Somente ter um editor de texto</p>
-
-
-## :open_file_folder: Libs Instaladas
-
-<p>Nenhuma lib! Feito com javaScript puro. O foco era somente estudar css e design</p>
+:warning: [Node](https://nodejs.org/en/download/)
 
 ## :arrow_forward: Como rodar a aplicacão
 
-Simplemente clicar no index.html ou usar o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-<br/>
-Dentro do Visual Studio Code: 
- - ctrl + shift + p
- - Procurar por "Live Server: Open With Live Serve" e apertar "enter"
+No terminal, clone o projeto:
+```
+git clone https://github.com/Ariosmaia/foodfy.git
+```
+
+```
+   - Instale as dependencias:
+```
+npm install
+```
+  - Execute a aplicação
+```
+npm run start
+```
  
  ## :memo: Licença
 

@@ -1,0 +1,390 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+.center {
+	width: 80%;
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+a:active {
+	font-size: bold;
+	color: seagreen;
+}
+
+/* === Header === */
+header {
+	width: 100%;
+	height: 80px;
+}
+
+header .center {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+header .center img{
+	margin-right: 12.5rem;
+	height: 2.69rem;
+	width: 9.06rem;
+}
+
+header .center nav a{
+	text-decoration: none;
+	margin-right: 3rem;
+	color: #111111;
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+}
+
+
+/* === Banner === */
+div.banner .center{
+	height: 366px;
+	background-color: #FBDFDB;
+	border-radius: 30px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5rem;
+}
+
+ div.banner .center .title{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 11.7rem;
+	margin-left: 6rem;
+	max-width: 31.6rem;
+}
+
+div.banner .center .title h1{
+	font-size: 3.2rem;
+	line-height: 4.2rem;
+	margin-bottom: 1rem;
+	color: #111111;
+	font-family: bold;
+}
+
+div.banner .center .title p{
+	opacity: 0.7;
+	font-size: 1.8rem;
+	font-weight: normal;
+	line-height: 1.8rem;
+	color: #000000;
+}
+
+div.banner .center img{
+	width: 216px;
+	height: 300px;
+	margin-right: 10rem;
+	margin-top: 6.6rem;
+}
+
+@media (max-width: 820px) {
+	div.banner .center{
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+	}	
+
+	div.banner .center .title{
+		align-items: center;
+		margin-top: 1rem;
+		margin-left: 0rem;
+		max-width: 40rem;
+	}
+	
+	div.banner .center .title h1{
+		margin-bottom: 1rem;
+	}
+	
+	div.banner .center img{
+		width: 194px;
+		height: 290px;
+		margin-right: 0rem;
+		margin-top: 2rem;
+	}
+}
+
+@media (max-width: 590px) {
+	div.banner .center{
+		flex-direction: row;
+		align-items: center;
+		height: 100%;
+		padding: 3rem;
+	}	
+
+	div.banner .center .title{
+		align-items: flex-start;
+	}
+}
+
+/* === Content === */
+div.content .center h1{
+	font-size: 2.4rem;
+	line-height: 3.4rem;
+	color: #111111;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+div.content .center .recipes {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2rem;
+}
+
+div.content .center .recipes .recipe{
+	margin-bottom: 3rem;
+}
+
+div.content .center .recipes .recipe img{
+	width: 100%;
+	height: 10.5rem;
+	border-radius: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+div.content .center .recipes .recipe h2{
+	font-size: 1.8rem;
+	color: #111111;
+	line-height: 28px;
+	font-weight: normal;
+	margin-bottom: 0.5rem;
+}
+
+div.content .center .recipes .recipe p{
+	font-size: 14px;
+	color: #777777;
+}
+
+@media (max-width: 820px) {
+	div.content .center .recipes {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 590px) {
+	div.content .center .recipes {
+		grid-template-columns: 1fr;
+	}
+
+	div.content .center .recipes .recipe img{
+		height: 80%;
+		width: 100%;
+		border-radius: 1.5rem;
+		margin-bottom: 2rem;
+	}
+	
+}
+
+/* === Footer === */
+footer {
+	background-color: #EEEEEE;
+	height: 62px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer p{
+	font-size: 14px;
+	color: #999999;
+}
+
+/* === Modal === */
+.modal-overlay {
+	background-color: rgba(0, 0, 0, 0.60);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: ease-in 0.3s;
+} 
+
+.modal-overlay .modal {
+	background: #FFFFFF;
+	width: 70%;
+	max-width: 660px;
+	max-height: 413px;
+	border-radius: 16px;
+	padding: 3rem;
+}
+
+.modal-overlay .modal .modal-content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.modal-overlay .modal .modal-content img{
+	width: 100%;
+	height: 200px;
+	border-radius: 15px;
+	margin-bottom: 2rem;
+}
+
+.modal-overlay .modal .modal-content strong{
+	font-size: 24px;
+	line-height: 34px;
+	color: #111111;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.modal-overlay .modal .modal-content p{
+	padding-bottom: 60px;
+	font-size: 18px;
+	color: #777777;	
+	text-align: center;
+}
+
+.modal-overlay .modal .modal-content a{
+	font-size: 16px;
+	color: #999999;
+	cursor: pointer;
+}
+
+@media (max-width: 590px) {
+	.modal-overlay .modal .modal-content img{
+		width: 100%;
+		height: 100%;
+		border-radius: 15px;
+		margin-bottom: 2rem;
+
+	}
+
+	.modal-overlay .modal .modal-content strong{
+		font-size: 20px;
+	}
+
+	.modal-overlay .modal .modal-content p{
+		font-size: 15px;
+	}
+}
+
+/* === MODAL.ACTIVE */
+.modal-overlay.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+/* === Page Sobre === */
+
+#sobreContent .center .info h2{
+	font-size: 20px;
+	line-height: 2.8rem;
+	color: #111111;
+	margin-bottom: 3rem;
+}
+
+#sobreContent .center .info p{
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	color: #444444;
+	margin-bottom: 3rem;
+}
+
+/* == 404 === */
+.notFound{
+	height: calc(100vh - 80px - 62px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.notFound img{
+	height: 100%;
+	width: 100%;
+	max-width: 450px;
+	max-height: 450px;
+	padding: 2rem;
+}
+
+.notFound .error{
+	padding-top: 1rem;
+	font-size: 10rem !important;
+	color: #777373!important;
+}
+
+.notFound .message{
+	font-size: 4rem !important;
+	color: #444444!important;
+	padding-bottom: 1rem;
+}
+
+@media (max-width: 820px) {
+	.notFound .error{
+		padding-top: 1rem;
+		font-size: 8rem !important;
+		color: #777373!important;
+	}
+
+	.notFound img{
+		height: 90%;
+		width: 90%;
+	}
+
+	.notFound .message{
+		font-size: 3rem !important;
+	}
+}
+
+@media (max-width: 590px) {
+	.notFound .error{
+		padding-top: 1rem;
+		font-size: 5rem !important;
+		color: #777373!important;
+	}
+
+	.notFound img{
+		height: 70%;
+		width: 70%;
+	}
+
+	.notFound .message{
+		font-size: 2.5rem !important;
+	}
+}
+
+
+
+
+

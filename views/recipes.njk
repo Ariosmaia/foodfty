@@ -1,0 +1,23 @@
+{% extends "layout.njk"%}
+
+{% block head %}
+		<title>Receitas - Foodfy</title>
+{% endblock %}
+
+{% block content %}
+		<div class="content">
+				<div class="center">
+						<div class="recipes">
+								{% for recipe in items %}
+										<div class="recipe" id={{recipe.id}}>
+												<img src="{{recipe.image}}" alt="Receita">
+												<h2>{{recipe.title}}</h2>
+												<p>{{recipe.author}}</p>
+										</div>
+								{% endfor %}
+						</div>
+				</div>
+		</div>
+		<div class="modal-overlay">
+		</div>
+{% endblock %}

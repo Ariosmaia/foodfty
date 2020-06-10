@@ -11,14 +11,19 @@
 - [Como rodar a aplicacão](#arrow_forward-como-rodar-a-aplicacão)
 - [Licença](#memo-licença)
 
+<br/><br/>
 
 ## :clipboard: Descrição do projeto
 
 <strong>Foodfy</strong> é um projeto fictício de uma empresa de receitas na web.
 
+<br/><br/>
+
 ## :point_right: Pré-requisitos
 
 :warning: [Node](https://nodejs.org/en/download/)
+
+<br/><br/>
 
 ## :arrow_forward: Como rodar a aplicacão
 
@@ -34,6 +39,7 @@ npm install
 ```
 npm run start
 ```
+ <br/><br/>
  
  ## :memo: Licença
 

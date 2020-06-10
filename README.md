@@ -28,9 +28,7 @@ No terminal, clone o projeto:
 ```
 git clone https://github.com/Ariosmaia/foodfy.git
 ```
-
-```
-   - Instale as dependencias:
+- Instale as dependencias:
 ```
 npm install
 ```

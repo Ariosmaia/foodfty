@@ -16,23 +16,12 @@
 						<h1>Mais acessadas</h1>
 						<div class="recipes">
 								{% for receipe in item %}
-										<div class="recipe" id="/assets/burger.png">
+										<div class="recipe" id={{receipe.id}}>
 												<img src="{{receipe.image}}" alt="Receita">
 												<h2>{{receipe.title}}</h2>
 												<p>{{receipe.author}}</p>
 										</div>
 								{% endfor %}
-						</div>
-				</div>
-		</div>
-
-		<div class="modal-overlay">
-				<div class=" modal">
-						<div class="modal-content">
-								<img src="" alt="Receita">
-								<strong>Asinhas de frango ao barbecue</strong>
-								<p>por Vania Steroski</p>
-								<a class="close-modal">Fechar modal</a>
 						</div>
 				</div>
 		</div>

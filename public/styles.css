@@ -18,7 +18,7 @@ html {
 
 @media (max-width: 720px) {
   html {
-    font-size: 54%;
+		font-size: 54%;
   }
 }
 
@@ -149,6 +149,7 @@ div.banner .center img{
 }
 
 /* === Content === */
+
 div.content .center h1{
 	font-size: 2.4rem;
 	line-height: 3.4rem;
@@ -383,6 +384,93 @@ footer p{
 		font-size: 2.5rem !important;
 	}
 }
+
+/* ==== Page Receipe Detail */
+
+.receipe-detail-header .receipe-detail-img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.receipe-detail-header  .receipe-detail-title{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 36px !important;
+	line-height: 46px;
+	margin-bottom: 4px !important;
+}
+
+.receipe-detail-header  .receipe-detail-author{
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+	color: #777777;
+	margin-bottom: 50px;
+}
+
+.ingredients, 
+.preparation,
+.information
+{
+	margin-bottom: 40px;
+}
+
+.ingredients div,
+.preparation div,
+.information div
+{
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 20px;
+}
+
+.ingredients div h2,
+.preparation div h2,
+.information div h2
+{
+	font-size: 24px;
+	line-height: 34px;
+}
+
+.ingredients div span,
+.preparation div span,
+.information div span
+{
+	font-size: 12px;
+	color: #999999;
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+.ingredients .ingredients-list,
+.preparation .preparation-list
+{
+	list-style-position: inside;
+	display: block;
+	transition: ease-in 0.2s;
+	font-size: 18px;
+	color: #444444;
+	line-height: 28px;
+}
+
+.ingredients-list.hidden-ingredients, 
+.preparation-list.hidden-preparation,
+.information p.hidden-info
+{
+	display: none;
+}
+
+.information p{
+	font-size: 18px;
+	color: #444444;
+	line-height: 28px;
+	text-align: justify;
+	visibility: visible;
+}
+
+
+
+
 
 
 
